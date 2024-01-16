@@ -1,0 +1,2 @@
+c++ -O3 -Wall -shared -std=c++11 -fPIC $(python3 -m pybind11 --includes) timedrel_ext_int.cpp -o timedrel_ext_int$(python3-config --extension-suffix)
+c++ -O3 -Wall -shared -std=c++11 -fPIC $(python3 -m pybind11 --includes) timedrel_ext_float.cpp -o timedrel_ext_float$(python3-config --extension-suffix)
